@@ -1,0 +1,9 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1171px;
+  height: 85px;
+  font-size: $font-sz-link-header;
+}

@@ -1,0 +1,11 @@
+.showcase__title  {
+  @extend %section-title;
+  margin: 0 0 16px;
+  position: relative;
+
+  &::before {
+    @extend %line;
+    top: 50%;
+    left: -65px;
+  }
+}

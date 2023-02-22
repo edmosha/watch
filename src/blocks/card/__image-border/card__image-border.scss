@@ -1,0 +1,11 @@
+.card__image-border {
+  width: 313px;
+  height: 313px;
+  margin-bottom: 19px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid transparent;
+  background: linear-gradient($color-bg, $color-bg) padding-box,
+              linear-gradient(to right, $color-bg 0%, #e2d0c4 100%) border-box;
+}

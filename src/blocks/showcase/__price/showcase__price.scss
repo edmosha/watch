@@ -1,0 +1,16 @@
+.showcase__price {
+  position: absolute;
+  font-family: $font-playfair-display;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-black;
+  top: 16%;
+  left: 45%;
+
+  &::after {
+    @extend %line;
+    top: 50%;
+    left: 75px;
+  }
+}

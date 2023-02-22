@@ -4,4 +4,9 @@
   font-weight: 400;
   color: $color-light-black;
   text-decoration: none;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $color-light-brown;
+  }
 }

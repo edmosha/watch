@@ -28,34 +28,50 @@ module.exports = {
         test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource',
       },
-      // {
-      //   test:/\.(s*)css$/,
-      //   use: [
-      //     MiniCssExtractPlugin.loader,
-      //     'css-loader',
-      //     'sass-loader',
-      //   ]
-      // },
-      // {
-      //   test: /\.scss$/,
-      //   use: [
-      //     "style-loader", // creates style nodes from JS strings
-      //     "css-loader", // translates CSS into CommonJS
-      //     "sass-loader" // compiles Sass to CSS
-      //   ]
-      // },
       {
-        test: /\.(s*)css$/,
-        use: [MiniCssExtractPlugin.loader, {
+        // sass
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
             loader: 'css-loader',
+            options: { sourceMap: true, importLoaders: 1 }
+          },
+          {
+            loader: 'postcss-loader',
             options: {
-              importLoaders: 1
+              sourceMap: true,
             }
           },
-          'sass-loader',
-          'postcss-loader'
+          {
+            loader: "resolve-url-loader", //resolve-url-loader needs to come *BEFORE* sass-loader
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: true }
+          }
         ]
       },
+      {
+        // css
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: { sourceMap: true, importLoaders: 1 }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [

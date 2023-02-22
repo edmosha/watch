@@ -1,11 +1,17 @@
-@import "../vendor/normalize.css";
+@import "../vendor/normalize.scss";
 @import "../vendor/fonts/roboto.css";
+@import "../vendor/fonts/playfairDisplay.css";
 @import "../sass/variables.scss";
 
+/* page */
 @import "../blocks/page/page.scss";
+
+/* catalog-button */
+@import "../blocks/catalog-btn/catalog-btn.scss";
 
 /* header */
 @import "../blocks/header/header.scss";
+@import "../blocks/header/__container/header__container.scss";
 @import "../blocks/header/__links/header__links.scss";
 @import "../blocks/header/__link/header__link.scss";
 @import "../blocks/header/__logo/header__logo.scss";
@@ -13,3 +19,70 @@
 @import "../blocks/header/__menu/header__menu.scss";
 @import "../blocks/header/__menu-item/header__menu-item.scss";
 @import "../blocks/header/__link-item/header____link-item.scss";
+
+/* showcase */
+@import "../blocks/showcase/showcase.scss";
+@import "../blocks/showcase/__container/showcase__container.scss";
+@import "../blocks/showcase/__catalog-btn/showcase__catalog-btn.scss";
+@import "../blocks/showcase/__description/showcase__description.scss";
+@import "../blocks/showcase/__image/showcase__image.scss";
+@import "../blocks/showcase/__subtitle/showcase__subtitle.scss";
+@import "../blocks/showcase/__text-container/showcase__text-container.scss";
+@import "../blocks/showcase/__title/showcase__title.scss";
+@import "../blocks/showcase/__price/showcase__price.scss";
+@import "../blocks/showcase/__diameter/showcase__diameter.scss";
+
+/* models */
+@import "../blocks/models/models.scss";
+@import "../blocks/models/__title/models__title.scss";
+@import "../blocks/models/__card-container/models__card-container.scss";
+@import "../blocks/models/__show-all-btn/models__show-all-btn.scss";
+
+/* card */
+@import "../blocks/card/card.scss";
+@import "../blocks/card/__title/card__title.scss";
+@import "../blocks/card/__price/card__price.scss";
+@import "../blocks/card/__image/card__image.scss";
+@import "../blocks/card/__image-border/card__image-border.scss";
+@import "../blocks/card/__more-info-link/card__more-info-link.scss";
+
+/* advantages */
+@import "../blocks/advantages/advantages.scss";
+@import "../blocks/advantages/__container/advantages__container.scss";
+@import "../blocks/advantages/__image/advantages__image.scss";
+@import "../blocks/advantages/__title/advantages__title.scss";
+@import "../blocks/advantages/__text-container/advantages__text-container.scss";
+@import "../blocks/advantages/__description/advantages__description.scss";
+@import "../blocks/advantages/__number-of-image/advantages__number-of-image.scss";
+@import "../blocks/advantages/__catalog-btn/advantages__catalog-btn.scss";
+@import "../blocks/advantages/__slider-container/advantages__slider-container.scss";
+@import "../blocks/advantages/__toggle-button/advantages__toggle-button.scss";
+@import "../blocks/advantages/__toggle-buttons-container/advantages__toggle-buttons-container.scss";
+@import "../blocks/advantages/__rectangle/advantages__rectangle.scss";
+@import "../blocks/advantages/__circles/advantages__circles.scss";
+
+@import "../blocks/advantages/__toggle-button/_type/advantages__toggle-button_type_right.scss";
+@import "../blocks/advantages/__toggle-button/_type/advantages__toggle-button_type_left.scss";
+
+/* social */
+@import "../blocks/social/social.scss";
+@import "../blocks/social/__description/social__description.scss";
+@import "../blocks/social/__text-container/social__text-container.scss";
+@import "../blocks/social/__title/social__title.scss";
+@import "../blocks/social/__link/social__link.scss";
+@import "../blocks/social/__accent/social__accent.scss";
+@import "../blocks/social/__gallery/social__gallery.scss";
+@import "../blocks/social/__gallery-item/social__gallery-item.scss";
+@import "../blocks/social/__links/social__links.scss";
+@import "../blocks/social/__gallery-image/social__gallery-image.scss";
+
+/* footer */
+@import "../blocks/footer/footer.scss";
+@import "../blocks/footer/__container/footer__container.scss";
+@import "../blocks/footer/__links-container/footer__links-container";
+@import "../blocks/footer/__link/footer__link.scss";
+@import "../blocks/footer/__title/footer__title.scss";
+@import "../blocks/footer/__link-item/footer__link-item.scss";
+@import "../blocks/footer/__contact/footer__contact.scss";
+@import "../blocks/footer/__logo/footer__logo.scss";
+@import "../blocks/footer/__contacts-container/footer__contacts-container";

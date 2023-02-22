@@ -1,0 +1,9 @@
+.social__gallery {
+  display: grid;
+  width: 630px;
+  grid-template-columns: 4fr 6fr;
+  grid-gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

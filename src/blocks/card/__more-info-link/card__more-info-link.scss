@@ -1,0 +1,21 @@
+.card__more-info-link {
+  position: relative;
+  padding-left: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-black;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+
+  &::before {
+    @extend %line;
+    top: 52%;
+    left: 10px;
+    width: 30px;
+  }
+
+  &:hover {
+    color: $color-light-brown;
+  }
+}

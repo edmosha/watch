@@ -1,0 +1,25 @@
+.models__show-all-btn {
+  position: relative;
+  align-self: end;
+  margin: 3px 0 37px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-light-black;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 101px;
+    height: 1px;
+    background-color: #C4C0B6;
+  }
+
+  &:hover {
+    color: $color-light-brown;
+  }
+}

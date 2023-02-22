@@ -1,0 +1,10 @@
+.advantages__catalog-btn {
+  margin-bottom: 21px;
+  background-color: $color-light-brown;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: $color-light-black;
+  }
+}
