@@ -1,8 +1,13 @@
 .card {
   box-sizing: border-box;
-  width: 370px;
-  min-height: 467px;
+  max-width: 370px;
+  max-height: 467px;
   padding: 40px 28px;
   background-color: $color-bg;
   font-family: $font-playfair-display;
+  margin-bottom: 30px;
+
+  &:hover {
+    box-shadow: 4px 4px 8px 0px rgba(212, 176, 152, 0.5);
+  }
 }

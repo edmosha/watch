@@ -4,4 +4,13 @@
   max-width: 970px;
   margin: 0 auto;
   padding: 52px 0 21px;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 52px 40px 21px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 52px 30px 21px;
+    flex-direction: column;
+  }
 }

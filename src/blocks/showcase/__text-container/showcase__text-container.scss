@@ -1,3 +1,11 @@
 .showcase__text-container {
   margin-right: 134px;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-right: 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 30px 0;
+  }
 }

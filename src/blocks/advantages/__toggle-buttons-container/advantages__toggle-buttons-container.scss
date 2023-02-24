@@ -3,4 +3,9 @@
   align-items: center;
   margin-left: 70%;
   margin-top: 20px;
+
+  @media screen and (max-width: 767px) {
+    margin: 20px 0;
+    align-self: center;
+  }
 }

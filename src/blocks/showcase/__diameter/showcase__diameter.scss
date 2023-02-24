@@ -12,5 +12,14 @@
     @extend %line;
     top: 50%;
     left: -65px;
+
+    @media screen and (max-width: 1023px) {
+      width: 25px;
+      left: -35px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 12px;
   }
 }

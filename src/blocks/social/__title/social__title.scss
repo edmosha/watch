@@ -1,4 +1,14 @@
 .social__title {
   @extend %section-title;
   margin: 140px 0 40px;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 28px;
+    margin: 50px 0 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    margin: 0 0 40px;
+  }
 }

@@ -4,4 +4,8 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media screen and (max-width: 560px) {
+    margin-right: 26px;
+  }
 }

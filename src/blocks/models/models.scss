@@ -4,5 +4,13 @@
   align-items: center;
   max-width: 1171px;
   margin: 0 auto;
-  padding: 76px 0 86px;
+  padding: 76px 0 56px;
+
+  @media screen and (min-width: 768px) and (max-width: 1240px) {
+    padding: 66px 40px 46px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 66px 30px 46px;
+  }
 }

@@ -2,5 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 768px;
+  max-height: 768px;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 0 80px;
+    max-height: 618px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    max-height: 862px;
+    padding: 0 50px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 425px) {
+    max-height: 780px;
+  }
 }

@@ -1,4 +1,13 @@
 .showcase {
   position: relative;
   background: $color-bg url("../../images/ellipse.svg") center no-repeat;
+
+  @media screen and (max-width: 767px) {
+    background-position: 40% 100%;
+    background-size: 300px;
+  }
+
+  @media screen and (max-width: 425px) {
+    background-size: 220px;
+  }
 }
